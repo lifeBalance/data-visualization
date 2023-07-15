@@ -68,4 +68,7 @@ If it bothers you, there are two options to get rid of it:
  sns.set_palette('colorblind')  # setting palette
  ```
 
+### Either show the plot in viewer or print to a file
+But don't try both, otherwise the generated png is a blank file.
+
  > Note, none of the approaches above worked for me :-(
