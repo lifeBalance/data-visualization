@@ -24,3 +24,18 @@ poetry add matplotlib
 ```
 
 That also adds them to the `pyproject.toml` file.
+
+## Matplotlib shortcuts
+Press `q` to close the window.
+
+## Issues
+If when you try to run the script (python mpl_squares.py) you get the error:
+```
+UserWarning: Matplotlib is currently using agg, which is a non-GUI backend,
+so cannot show the figure.
+```
+
+You need to install a GUI backend; in Fedora you'd do:
+```
+sudo dnf install python3-tkinter
+```

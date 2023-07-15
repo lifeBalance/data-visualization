@@ -8,14 +8,14 @@ square_seq = [1, 4, 9, 16, 25] # 1st 5 terms of a square number sequence.
 fig, ax = plt.subplots()
 
 # The plot method call tries to plot the data given as argument.
-ax.plot(square_seq)
+ax.plot(square_seq, linewidth=3)
+
+# Set chart title and label axes.
+ax.set_title("Square Sequence", fontsize=24)
+ax.set_xlabel("n (A number)", fontsize=14)
+ax.set_ylabel("Square of n", fontsize=14)
+
+# Set size of tick labels.
+ax.tick_params(labelsize=14)
 
 plt.show()
-# If when you try to run the script (python mpl_squares.py) you get the error:
-#
-#   UserWarning: Matplotlib is currently using agg, which is a non-GUI backend,
-#   so cannot show the figure.
-#
-# You need to install a GUI backend; in Fedora you'd do:
-#
-#   sudo dnf install python3-tkinter
