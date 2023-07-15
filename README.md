@@ -29,6 +29,8 @@ That also adds them to the `pyproject.toml` file.
 Press `q` to close the window.
 
 ## Issues
+
+### No GUI backend
 If when you try to run the script (python mpl_squares.py) you get the error:
 ```
 UserWarning: Matplotlib is currently using agg, which is a non-GUI backend,
@@ -39,3 +41,31 @@ You need to install a GUI backend; in Fedora you'd do:
 ```
 sudo dnf install python3-tkinter
 ```
+
+### Seaborn error
+If you try to set the style of the plot using `plt.style.use('seaborn')`, you may get the **warning**:
+
+```
+MatplotlibDeprecationWarning: The seaborn styles shipped by Matplotlib are deprecated since 3.6, as they no longer correspond to the styles shipped by seaborn. However, they will remain available as 'seaborn-v0_8-<style>'. Alternatively, directly use the seaborn API instead.
+```
+
+If it bothers you, there are two options to get rid of it:
+
+1. Add the `-v0_8-` prefix, before the seaborn style you want to use, e.g. `seaborn-v0_8-colorblind`.
+2. Install the [seaborn library](https://seaborn.pydata.org/), import it into your project, and configure it to your liking:
+
+ - To install it.
+ ```
+ poetry add seaborn
+ ```
+
+ - To import it and use it:
+ ```python
+ import seaborn as sns
+
+ sns.set_style('ticks')         # setting style
+ sns.set_context('paper')       # setting context
+ sns.set_palette('colorblind')  # setting palette
+ ```
+
+ > Note, none of the approaches above worked for me :-(

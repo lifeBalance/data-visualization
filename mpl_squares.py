@@ -4,6 +4,9 @@ input_values = [1, 2, 3, 4, 5]  # values used for x axis
 # 1st 5 terms of a square number sequence.
 square_seq = [1, 4, 9, 16, 25]  # values used for y axis
 
+# Set the theme
+plt.style.use('seaborn')
+
 # Unpack return value of a call to the subplots method:
 # - fig represents the entire figure (collection of plots).
 # - ax represents a single plot in the figure.
