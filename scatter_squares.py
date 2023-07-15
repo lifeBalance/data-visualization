@@ -33,4 +33,5 @@ ax.ticklabel_format(style='plain') # No scientific notation.
 # Set size of tick labels.
 ax.tick_params(labelsize=14)
 
-plt.show()
+plt.show() # Show plot in viewes
+plt.savefig('squares_plot.png', bbox_inches='tight') # Save plot to a file.
