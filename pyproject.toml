@@ -9,6 +9,8 @@ packages = [{include = "data_sci"}]
 [tool.poetry.dependencies]
 python = "^3.11"
 matplotlib = "^3.7.2"
+plotly = "^5.15.0"
+pandas = "^2.0.3"
 
 
 [build-system]
