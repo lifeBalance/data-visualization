@@ -6,12 +6,12 @@ from random_walk import RandomWalk
 
 while True:
     # Generate data of a random walk.
-    rw = RandomWalk()
+    rw = RandomWalk(50_000)
     rw.fill_walk()
 
     # Plot the points in the walk.
     plt.style.use("classic")
-    fig, ax = plt.subplots()
+    fig, ax = plt.subplots(figsize=(10, 6), dpi=96) # 1920x1080=96dpi
 
     # Generate a list of numbers with the same amounts of points in the walk.
     point_numbers = range(rw.num_points)
@@ -21,7 +21,7 @@ while True:
         c=point_numbers,
         cmap=plt.cm.Blues,
         edgecolors="none",
-        s=14,
+        s=1,
     )
     ax.set_aspect("equal")
 
