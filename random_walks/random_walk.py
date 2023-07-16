@@ -11,19 +11,20 @@ class RandomWalk:
         self.x_values = [0]
         self.y_values = [0]
 
+    def get_step(self):
+        """Decide which direction to go, and how far in that direction."""
+        direction = choice([1, -1])
+        distance = choice([0, 1, 2, 3, 4])
+        return direction * distance
+
     def fill_walk(self):
         """Calculate all the points in the walk."""
 
         # Keep taking steps until the walk reaches the desired length.
         while len(self.x_values) < self.num_points:
-            # Decide which direction to go, and how far in that direction.
-            x_direction = choice([1, -1]) # Returns 1 or -1 (left or right)
-            x_distance = choice([0, 1, 2, 3, 4]) # From 0 to 4.
-            x_step = x_direction * x_distance
-            
-            y_direction = choice([1, -1]) # Returns 1 or -1 (up or down)
-            y_distance = choice([0, 1, 2, 3, 4]) # From 0 to 4.
-            y_step = y_direction * y_distance
+            # Call get_step method for x and y coordinates.
+            x_step = self.get_step()
+            y_step = self.get_step()
 
             # Rejects moves that go nowwhere (don't add them to the walk)
             if x_step == 0 and y_step == 0:
