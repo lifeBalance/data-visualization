@@ -29,8 +29,9 @@ for row in reader:
 # Plot the high temperatures in a line graph.
 plt.style.use('seaborn')
 fig, ax = plt.subplots()
-ax.plot(dates, highs, color='red')
-ax.plot(dates, lows, color='blue')
+ax.plot(dates, highs, color='red', alpha=0.5) # Draw lines with some transparency
+ax.plot(dates, lows, color='blue', alpha=0.5)
+ax.fill_between(dates, highs, lows, facecolor='blue', alpha=0.1)
 
 # Format plot.
 ax.set_title('Daily High and Low Temperatures, 2021', fontsize=24)
