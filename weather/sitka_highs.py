@@ -11,5 +11,6 @@ lines = path.read_text().splitlines()
 reader = csv.reader(lines)  # Pass the lines to the constructor.
 header_row = next(reader)   # Store 1st line in header_row (move cursor to 2nd)
 
-# Print the 1st line (Header line)
-print(header_row)
+# Print the fields in the Header.
+for index, column_header in enumerate(header_row):
+    print(index, column_header)
