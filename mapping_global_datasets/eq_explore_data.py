@@ -20,10 +20,16 @@ all_eq_data = json.loads(contents)
 all_eq_dicts = all_eq_data['features'] # 160 earthquakes.
 # print(len(all_eq_dicts)) # 160
 
-# Extract the magnitudes to a separate list.
-mags = []
+# Empty lists for the magnitudes, longitudes and latitudes.
+mags, lons, lats = [], [], []
 for eq in all_eq_dicts:
     mag = eq['properties']['mag'] # Magnitudes are nested under 'properties'.
+    lon = eq['geometry']['coordinates'][0]
+    lat = eq['geometry']['coordinates'][1]
     mags.append(mag)
+    lons.append(lon)
+    lats.append(lat)
 
 print(mags[:10]) # Print a list with the last 10 magnitudes.
+print(lons[:10])
+print(lats[:10])
