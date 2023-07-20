@@ -15,15 +15,17 @@ all_eq_data = json.loads(contents)
 # Extract all the earthquakes from the dataset stored under the 'features' key.
 all_eq_dicts = all_eq_data["features"]  # 160 earthquakes.
 
-# Empty lists for the magnitudes, longitudes and latitudes.
-mags, lons, lats = [], [], []
+# Empty lists for the magnitudes, longitudes, latitudes, and earthquake names.
+mags, lons, lats, eq_titles = [], [], [], []
 for eq in all_eq_dicts:
     mag = eq["properties"]["mag"]  # Magnitudes are nested under 'properties'.
     lon = eq["geometry"]["coordinates"][0]
     lat = eq["geometry"]["coordinates"][1]
+    eq_title = eq['properties']['title']
     mags.append(mag)
     lons.append(lon)
     lats.append(lat)
+    eq_titles.append(eq_title)
 
 title = "Global Earthquakes"
 fig = px.scatter_geo(
@@ -34,7 +36,8 @@ fig = px.scatter_geo(
     color=mags,
     color_continuous_scale="Viridis",   # from dark blue to bright yellow.
     labels={"color": "Magnitude"},      # Label for the color scale.
-    projection='natural earth'          # Round the ends of the map.
+    projection='natural earth',         # Round the ends of the map.
+    hover_name=eq_titles,               # Show eq name on hover.
 )
 
 # To see the available color scales, run:
