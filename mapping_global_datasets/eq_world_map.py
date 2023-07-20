@@ -18,14 +18,10 @@ all_eq_dicts = all_eq_data["features"]  # 160 earthquakes.
 # Empty lists for the magnitudes, longitudes, latitudes, and earthquake names.
 mags, lons, lats, eq_titles = [], [], [], []
 for eq in all_eq_dicts:
-    mag = eq["properties"]["mag"]  # Magnitudes are nested under 'properties'.
-    lon = eq["geometry"]["coordinates"][0]
-    lat = eq["geometry"]["coordinates"][1]
-    eq_title = eq['properties']['title']
-    mags.append(mag)
-    lons.append(lon)
-    lats.append(lat)
-    eq_titles.append(eq_title)
+    mags.append(eq["properties"]["mag"])
+    lons.append(eq["geometry"]["coordinates"][0])
+    lats.append(eq["geometry"]["coordinates"][1])
+    eq_titles.append(eq['properties']['title'])
 
 title = "Global Earthquakes"
 fig = px.scatter_geo(
