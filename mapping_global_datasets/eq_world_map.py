@@ -23,7 +23,7 @@ for eq in all_eq_dicts:
     lats.append(eq["geometry"]["coordinates"][1])
     eq_titles.append(eq['properties']['title'])
 
-title = "Global Earthquakes"
+title = all_eq_data['metadata']['title']
 fig = px.scatter_geo(
     lat=lats,
     lon=lons,
