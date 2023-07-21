@@ -2,7 +2,7 @@ from pathlib import Path
 import json
 
 # Instantiate a Path object
-path = Path('eq_data/eq_data_1_day_m1.geojson')
+path = Path('data/eq_data_1_day_m1.geojson')
 
 # Read the text content into a variable, using the read_text method
 contents = path.read_text()

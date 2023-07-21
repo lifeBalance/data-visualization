@@ -4,7 +4,7 @@ import json
 import plotly.express as px
 
 # Instantiate a Path object
-path = Path("eq_data/eq_data_30_day_m1.json")
+path = Path("data/eq_data_30_day_m1.json")
 
 # Read the text content into a variable, using the read_text method
 contents = path.read_text()
