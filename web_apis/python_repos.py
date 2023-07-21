@@ -11,7 +11,7 @@ headers = { 'Accept': 'application/vnd.github.v3+json' }
 res = requests.get(url, headers=headers)
 
 # res is an instance of Response; let's print the value of the 'status_code' property.
-# print(f'Status code: {res.status_code}')
+print(f'Status code: {res.status_code}')
 
 # By the way, res is an instance (an object) of the Response class.
 # print(type(res)) # <class 'requests.models.Response'>
@@ -29,8 +29,12 @@ print(f'Repositories returned: {len(repo_dicts)}')
 
 # Examine the 1st repo.
 first_repo = repo_dicts[0]
-print(f'\nKeys: {len(first_repo)}')
+# print(f'Keys: {first_repo.keys()}') # Check all available keys (first level).
 
-# Let's list the available keys to see what info we can pull from the API.
-for key in sorted(first_repo.keys()):
-    print(key)
+print("\nSelected information about the first repository:")
+print(f"Name: {first_repo['name']}")
+print(f"Owner: {first_repo['owner']['login']}")
+print(f"URL: {first_repo['html_url']}")
+print(f"Created: {first_repo['created_at']}")
+print(f"Updated: {first_repo['updated_at']}")
+print(f"Description: {first_repo['description']}")
