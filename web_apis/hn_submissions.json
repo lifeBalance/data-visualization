@@ -1,252 +1,302 @@
 [
     {
         "title": "Web Environment Integrity API Proposal",
+        "author": "reactormonk",
         "hn_link": "https://news.ycombinator.com/item?id=36817305",
-        "comments": 326
+        "comments": 342
     },
     {
         "title": "Journalists should be skeptical of all sources including scientists",
+        "author": "amadeuspagel",
         "hn_link": "https://news.ycombinator.com/item?id=36818896",
-        "comments": 298
+        "comments": 306
     },
     {
-        "title": "\u2018World of Warcraft\u2019 players trick AI-scraping website into publishing nonsense",
-        "hn_link": "https://news.ycombinator.com/item?id=36815744",
-        "comments": 187
-    },
-    {
-        "title": "I have written a JVM in Rust",
-        "hn_link": "https://news.ycombinator.com/item?id=36811554",
-        "comments": 155
+        "title": "Nanosecond timestamp collisions are common",
+        "author": "ingve",
+        "hn_link": "https://news.ycombinator.com/item?id=36810818",
+        "comments": 262
     },
     {
         "title": "FBI improperly used 702 surveillance powers on US senator",
+        "author": "ramblenode",
         "hn_link": "https://news.ycombinator.com/item?id=36822654",
-        "comments": 146
+        "comments": 184
     },
     {
-        "title": "Don\u2019t Make Fun of Renowned Dan Brown (2013)",
-        "hn_link": "https://news.ycombinator.com/item?id=36818501",
-        "comments": 145
+        "title": "I have written a JVM in Rust",
+        "author": "lukastyrychtr",
+        "hn_link": "https://news.ycombinator.com/item?id=36811554",
+        "comments": 157
     },
     {
         "title": "Managing Kitchen Fruit Flies with a Little Shop of Horrors",
+        "author": "zacharycohn",
         "hn_link": "https://news.ycombinator.com/item?id=36820469",
-        "comments": 126
+        "comments": 145
     },
     {
         "title": "Show HN: Primo \u2013 a visual CMS with Svelte blocks, a code editor, and SSG",
+        "author": "mmmateo",
         "hn_link": "https://news.ycombinator.com/item?id=36813086",
         "comments": 107
     },
     {
         "title": "NativePHP: A framework for building desktop apps using PHP",
+        "author": "brysonreece",
         "hn_link": "https://news.ycombinator.com/item?id=36820555",
-        "comments": 95
-    },
-    {
-        "title": "Llama: Add grammar-based sampling",
-        "hn_link": "https://news.ycombinator.com/item?id=36819906",
-        "comments": 88
+        "comments": 104
     },
     {
         "title": "Employees bid on Anchor Brewery",
+        "author": "selimthegrim",
         "hn_link": "https://news.ycombinator.com/item?id=36821861",
-        "comments": 83
+        "comments": 96
     },
     {
-        "title": "Ask HN: What are the best papers you read in your life?",
-        "hn_link": "https://news.ycombinator.com/item?id=36817231",
-        "comments": 82
-    },
-    {
-        "title": "For BSD Unix, It's Sayonara (1992)",
-        "hn_link": "https://news.ycombinator.com/item?id=36817482",
-        "comments": 67
-    },
-    {
-        "title": "MiniZinc",
-        "hn_link": "https://news.ycombinator.com/item?id=36817628",
-        "comments": 65
-    },
-    {
-        "title": "\u2018The best blueberry\u2019: how a tiny North American fruit took over Australia (2022)",
-        "hn_link": "https://news.ycombinator.com/item?id=36797636",
-        "comments": 58
-    },
-    {
-        "title": "ElKaWe \u2013 Electrocaloric heat pumps",
-        "hn_link": "https://news.ycombinator.com/item?id=36823524",
-        "comments": 57
+        "title": "Llama: Add grammar-based sampling",
+        "author": "davepeck",
+        "hn_link": "https://news.ycombinator.com/item?id=36819906",
+        "comments": 93
     },
     {
         "title": "Bun v0.7.0",
+        "author": "sshroot",
         "hn_link": "https://news.ycombinator.com/item?id=36823723",
-        "comments": 48
+        "comments": 77
     },
     {
-        "title": "Compromised Microsoft key: More impactful than we thought",
-        "hn_link": "https://news.ycombinator.com/item?id=36823007",
-        "comments": 46
+        "title": "For BSD Unix, It's Sayonara (1992)",
+        "author": "operator-name",
+        "hn_link": "https://news.ycombinator.com/item?id=36817482",
+        "comments": 69
     },
     {
-        "title": "Google tries internet air-gap for some staff PCs",
-        "hn_link": "https://news.ycombinator.com/item?id=36797471",
-        "comments": 45
+        "title": "MiniZinc",
+        "author": "gavi",
+        "hn_link": "https://news.ycombinator.com/item?id=36817628",
+        "comments": 66
     },
     {
-        "title": "Pressure and vacuum marination does not work (2016)",
-        "hn_link": "https://news.ycombinator.com/item?id=36783937",
-        "comments": 40
+        "title": "\u2018The best blueberry\u2019: how a tiny North American fruit took over Australia (2022)",
+        "author": "calf",
+        "hn_link": "https://news.ycombinator.com/item?id=36797636",
+        "comments": 64
     },
     {
-        "title": "FreeWilly 1 and 2, two new open-access LLMs",
-        "hn_link": "https://news.ycombinator.com/item?id=36818923",
-        "comments": 40
-    },
-    {
-        "title": "Internet search tips",
-        "hn_link": "https://news.ycombinator.com/item?id=36822880",
-        "comments": 38
+        "title": "ElKaWe \u2013 Electrocaloric heat pumps",
+        "author": "danans",
+        "hn_link": "https://news.ycombinator.com/item?id=36823524",
+        "comments": 63
     },
     {
         "title": "Confronting failure as a core life skill",
+        "author": "blh75",
         "hn_link": "https://news.ycombinator.com/item?id=36784114",
-        "comments": 38
+        "comments": 63
     },
     {
-        "title": "TH3P4G3 Thunderbolt eGPU Dock Review (2022)",
-        "hn_link": "https://news.ycombinator.com/item?id=36820205",
-        "comments": 29
+        "title": "Plane \u2013 Open-source Jira alternative",
+        "author": "prhrb",
+        "hn_link": "https://news.ycombinator.com/item?id=36824450",
+        "comments": 61
     },
     {
-        "title": "RFC 9420 a.k.a. Messaging Layer Security",
-        "hn_link": "https://news.ycombinator.com/item?id=36815705",
-        "comments": 27
+        "title": "Google tries internet air-gap for some staff PCs",
+        "author": "beardyw",
+        "hn_link": "https://news.ycombinator.com/item?id=36797471",
+        "comments": 56
     },
     {
-        "title": "Book Review: The Laws of Trading",
-        "hn_link": "https://news.ycombinator.com/item?id=36820105",
-        "comments": 23
+        "title": "Compromised Microsoft key: More impactful than we thought",
+        "author": "882542F3884314B",
+        "hn_link": "https://news.ycombinator.com/item?id=36823007",
+        "comments": 53
     },
     {
         "title": "Putting the \u201cYou\u201d in CPU",
+        "author": "uneekname",
         "hn_link": "https://news.ycombinator.com/item?id=36823605",
-        "comments": 22
+        "comments": 50
+    },
+    {
+        "title": "Internet search tips",
+        "author": "herbertl",
+        "hn_link": "https://news.ycombinator.com/item?id=36822880",
+        "comments": 50
+    },
+    {
+        "title": "Pressure and vacuum marination does not work (2016)",
+        "author": "OJFord",
+        "hn_link": "https://news.ycombinator.com/item?id=36783937",
+        "comments": 49
     },
     {
         "title": "AWS networking concepts in a diagram",
+        "author": "mparnisari",
         "hn_link": "https://news.ycombinator.com/item?id=36823516",
-        "comments": 18
+        "comments": 37
     },
     {
         "title": "Bfs 3.0: The Fastest Find Yet",
+        "author": "rurban",
         "hn_link": "https://news.ycombinator.com/item?id=36783449",
-        "comments": 17
+        "comments": 29
+    },
+    {
+        "title": "Book Review: The Laws of Trading",
+        "author": "feross",
+        "hn_link": "https://news.ycombinator.com/item?id=36820105",
+        "comments": 27
+    },
+    {
+        "title": "About math limitations",
+        "author": "alexmolas",
+        "hn_link": "https://news.ycombinator.com/item?id=36797514",
+        "comments": 26
     },
     {
         "title": "Discovery: Metals can heal themselves",
+        "author": "bobvanluijt",
         "hn_link": "https://news.ycombinator.com/item?id=36822530",
+        "comments": 20
+    },
+    {
+        "title": "Simpson Fan Grows Tomacco (2003)",
+        "author": "pipeline_peak",
+        "hn_link": "https://news.ycombinator.com/item?id=36824856",
+        "comments": 19
+    },
+    {
+        "title": "MSX-DOS",
+        "author": "pavlov",
+        "hn_link": "https://news.ycombinator.com/item?id=36797650",
+        "comments": 15
+    },
+    {
+        "title": "Over-grazing and desertification in the Syrian steppe root causes of war (2015)",
+        "author": "joveian",
+        "hn_link": "https://news.ycombinator.com/item?id=36824607",
+        "comments": 14
+    },
+    {
+        "title": "What we talk about when we talk about System Design",
+        "author": "scv119",
+        "hn_link": "https://news.ycombinator.com/item?id=36823375",
         "comments": 13
     },
     {
         "title": "Using Prolog in Windows NT Network Configuration (1996)",
+        "author": "zdw",
         "hn_link": "https://news.ycombinator.com/item?id=36821871",
-        "comments": 10
+        "comments": 13
     },
     {
-        "title": "About math limitations",
-        "hn_link": "https://news.ycombinator.com/item?id=36797514",
-        "comments": 10
-    },
-    {
-        "title": "What we talk about when we talk about System Design",
-        "hn_link": "https://news.ycombinator.com/item?id=36823375",
-        "comments": 7
+        "title": "Octos \u2013 HTML live wallpaper engine",
+        "author": "underpig1",
+        "hn_link": "https://news.ycombinator.com/item?id=36824595",
+        "comments": 12
     },
     {
         "title": "Group arrested for selling former cryptomining graphics cards as brand-new",
+        "author": "thunderbong",
         "hn_link": "https://news.ycombinator.com/item?id=36822875",
-        "comments": 7
-    },
-    {
-        "title": "Plane \u2013 open-source Jira alternative",
-        "hn_link": "https://news.ycombinator.com/item?id=36824450",
-        "comments": 5
+        "comments": 12
     },
     {
         "title": "Apple's interactive television box: Hacking the set top box System 7.1 in ROM",
+        "author": "todsacerdoti",
         "hn_link": "https://news.ycombinator.com/item?id=36823565",
+        "comments": 11
+    },
+    {
+        "title": "Biotumen: Bitumen Reinvented",
+        "author": "patall",
+        "hn_link": "https://news.ycombinator.com/item?id=36824330",
         "comments": 5
     },
     {
-        "title": "GNU PSPP",
-        "hn_link": "https://news.ycombinator.com/item?id=36822994",
+        "title": "Lidar-equipped, 30-pound robot dog can be yours for $1,600",
+        "author": "Brajeshwar",
+        "hn_link": "https://news.ycombinator.com/item?id=36824225",
         "comments": 5
+    },
+    {
+        "title": "To grasp the extent of inequality, look at the relatively well-off",
+        "author": "ksey3",
+        "hn_link": "https://news.ycombinator.com/item?id=36825675",
+        "comments": 4
     },
     {
         "title": "Spawn() of Satan (2018)",
+        "author": "ingve",
         "hn_link": "https://news.ycombinator.com/item?id=36783509",
         "comments": 4
     },
     {
-        "title": "The Rediscovery of Susan Taubes",
-        "hn_link": "https://news.ycombinator.com/item?id=36796917",
+        "title": "Clearing up FUD surrounding Red Hat's actions",
+        "author": "thepbone",
+        "hn_link": "https://news.ycombinator.com/item?id=36824893",
+        "comments": 4
+    },
+    {
+        "title": "Why America\u2019s Largest Tool Company Couldn\u2019t Make a Wrench in America",
+        "author": "impish9208",
+        "hn_link": "https://news.ycombinator.com/item?id=36825037",
+        "comments": 4
+    },
+    {
+        "title": "Why Rust is a great fit for embedded software \u2013 2023 update",
+        "author": "kristianpaul",
+        "hn_link": "https://news.ycombinator.com/item?id=36822851",
         "comments": 3
     },
     {
-        "title": "Octos \u2013 HTML live wallpaper engine",
-        "hn_link": "https://news.ycombinator.com/item?id=36824595",
+        "title": "Neurotechnology: Current Developments and Ethical Issues",
+        "author": "Quinzel",
+        "hn_link": "https://news.ycombinator.com/item?id=36825481",
+        "comments": 2
+    },
+    {
+        "title": "Regex matching in P with backreference (2019)",
+        "author": "userbinator",
+        "hn_link": "https://news.ycombinator.com/item?id=36809239",
+        "comments": 2
+    },
+    {
+        "title": "A Drug Maker Profited by Slow-Walking a Promising HIV Therapy",
+        "author": "aaronharnly",
+        "hn_link": "https://news.ycombinator.com/item?id=36825427",
+        "comments": 2
+    },
+    {
+        "title": "I thought I wanted to be a professor. Then, I served on a hiring committee",
+        "author": "ykonstant",
+        "hn_link": "https://news.ycombinator.com/item?id=36825204",
         "comments": 1
     },
     {
-        "title": "MSX-DOS",
-        "hn_link": "https://news.ycombinator.com/item?id=36797650",
+        "title": "Understanding Understanding Media (2011)",
+        "author": "yamrzou",
+        "hn_link": "https://news.ycombinator.com/item?id=36797403",
         "comments": 1
     },
     {
-        "title": "Lidar-equipped, 30-pound robot dog can be yours for $1,600",
-        "hn_link": "https://news.ycombinator.com/item?id=36824225",
+        "title": "Russian fortifications present an old problem for Ukraine",
+        "author": "rainworld",
+        "hn_link": "https://news.ycombinator.com/item?id=36825565",
         "comments": 1
-    },
-    {
-        "title": "Who knew about radiation sickness, and when?",
-        "hn_link": "https://news.ycombinator.com/item?id=36819102",
-        "comments": 1
-    },
-    {
-        "title": "Kevin Mitnick Is Now Selling Zero-Day Exploits (2014)",
-        "hn_link": "https://news.ycombinator.com/item?id=36824763",
-        "comments": 1
-    },
-    {
-        "title": "When Apple sold wine, scooters, toys, & paperclips",
-        "hn_link": "https://news.ycombinator.com/item?id=36824110",
-        "comments": 1
-    },
-    {
-        "title": "Biotumen: Bitumen Reinvented",
-        "hn_link": "https://news.ycombinator.com/item?id=36824330",
-        "comments": 0
     },
     {
         "title": "Sleep Reset (YC W17) Is Hiring",
+        "author": "yunhakim",
         "hn_link": "https://news.ycombinator.com/item?id=36819670",
         "comments": 0
     },
     {
-        "title": "Clearing up FUD surrounding Red Hat's actions",
-        "hn_link": "https://news.ycombinator.com/item?id=36824893",
-        "comments": 0
-    },
-    {
         "title": "High-quality pro image resizing / scaling C++ library",
+        "author": "pyinstallwoes",
         "hn_link": "https://news.ycombinator.com/item?id=36821764",
-        "comments": 0
-    },
-    {
-        "title": "Plato: Allegory of the Cave",
-        "hn_link": "https://news.ycombinator.com/item?id=36824767",
         "comments": 0
     }
 ]
