@@ -1,3 +1,5 @@
+from matplotlib.axis import YAxis
+from matplotlib.gridspec import GridSpecFromSubplotSpec
 import requests
 import plotly.express as px
 
@@ -22,12 +24,17 @@ print(f"Complete results: {not response_dict['incomplete_results']}")
 # Extract array of repos
 repos = response_dict['items'] # Repos are under the 'items' key.
 
+# Repo names array for the x-axis, stars array for the y-axis.
 repo_names, stars = [], []
 # Traverse the array of repos, extracting names and stars to separate arrays.
 for repo in repos:
     repo_names.append(repo['name'])
     stars.append(repo['stargazers_count'])
 
-# Make visualization.
-fig = px.bar(x=repo_names, y=stars)
+title = "Most-Starred Python Projects on GitHub"
+labels = {'x': 'Repository', 'y': 'Stars'}
+# Make visualization (uses arrays to build x and y axes).
+fig = px.bar(x=repo_names, y=stars, title=title, labels=labels)
+# Increase font size for axes titles.
+fig.update_layout(title_font_size=28, xaxis_title_font_size=20, yaxis_title_font_size=20)
 fig.show()
