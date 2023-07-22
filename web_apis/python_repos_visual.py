@@ -1,5 +1,3 @@
-from matplotlib.axis import YAxis
-from matplotlib.gridspec import GridSpecFromSubplotSpec
 import requests
 import plotly.express as px
 
@@ -22,19 +20,26 @@ response_dict = res.json()
 print(f"Complete results: {not response_dict['incomplete_results']}")
 
 # Extract array of repos
-repos = response_dict['items'] # Repos are under the 'items' key.
+repos = response_dict["items"]  # Repos are under the 'items' key.
 
 # Repo names array for the x-axis, stars array for the y-axis.
-repo_names, stars = [], []
+repo_names, stars, hover_texts = [], [], []
 # Traverse the array of repos, extracting names and stars to separate arrays.
 for repo in repos:
-    repo_names.append(repo['name'])
-    stars.append(repo['stargazers_count'])
+    repo_names.append(repo["name"])
+    stars.append(repo["stargazers_count"])
+
+    # Build hover texts.
+    owner = repo["owner"]["login"]
+    description = repo["description"]
+    hover_texts.append(f"{owner}<br />{description}")
 
 title = "Most-Starred Python Projects on GitHub"
-labels = {'x': 'Repository', 'y': 'Stars'}
+labels = {"x": "Repository", "y": "Stars"}
 # Make visualization (uses arrays to build x and y axes).
-fig = px.bar(x=repo_names, y=stars, title=title, labels=labels)
+fig = px.bar(x=repo_names, y=stars, title=title, labels=labels, hover_name=hover_texts)
 # Increase font size for axes titles.
-fig.update_layout(title_font_size=28, xaxis_title_font_size=20, yaxis_title_font_size=20)
+fig.update_layout(
+    title_font_size=28, xaxis_title_font_size=20, yaxis_title_font_size=20
+)
 fig.show()
