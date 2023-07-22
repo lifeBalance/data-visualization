@@ -1,4 +1,6 @@
 from operator import itemgetter
+from pathlib import Path
+import json
 
 import requests
 
@@ -29,7 +31,7 @@ for id in submission_ids[:50]:
         "title": response_dict["title"],
         "hn_link": f"https://news.ycombinator.com/item?id={id}",
         "comments": response_dict["descendants"]
-        if "descendants" in response_dict
+        if "descendants" in response_dict # Shorter way: ternary operator.
         else 0,
     }
     submission_dicts.append(submission_dict)
@@ -43,3 +45,10 @@ for submission in submission_dicts:
     print(f"\nTitle: {submission['title']}")
     print(f"Discussion: {submission['hn_link']}")
     print(f"Comments: {int(submission['comments'])}")
+
+# Create a Path object for the file.
+path = Path('./hn_submissions.json')
+# Convert the array into a JSON string.
+json_content = json.dumps(submission_dicts, indent=4)
+# Write the JSON content to disk.
+path.write_text(json_content)
