@@ -22,11 +22,14 @@ print(f"Complete results: {not response_dict['incomplete_results']}")
 # Extract array of repos
 repos = response_dict["items"]  # Repos are under the 'items' key.
 
-# Repo names array for the x-axis, stars array for the y-axis.
-repo_names, stars, hover_texts = [], [], []
+# Repo links array for the x-axis, stars array for the y-axis.
+repo_links, stars, hover_texts = [], [], []
 # Traverse the array of repos, extracting names and stars to separate arrays.
 for repo in repos:
-    repo_names.append(repo["name"])
+    # Build the links to the repos using the url and repo name.
+    repo_name = repo["name"]
+    repo_url = repo['html_url']
+    repo_links.append(f'<a href="{repo_url}">{repo_name}</a>')
     stars.append(repo["stargazers_count"])
 
     # Build hover texts.
@@ -37,7 +40,7 @@ for repo in repos:
 title = "Most-Starred Python Projects on GitHub"
 labels = {"x": "Repository", "y": "Stars"}
 # Make visualization (uses arrays to build x and y axes).
-fig = px.bar(x=repo_names, y=stars, title=title, labels=labels, hover_name=hover_texts)
+fig = px.bar(x=repo_links, y=stars, title=title, labels=labels, hover_name=hover_texts)
 # Increase font size for axes titles.
 fig.update_layout(
     title_font_size=28, xaxis_title_font_size=20, yaxis_title_font_size=20
